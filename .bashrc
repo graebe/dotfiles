@@ -1,3 +1,6 @@
+# Starting command blesh
+[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
+
 # aliases
 alias bashrc='source ~/.bashrc'
 alias ll='ls -Al'
@@ -12,3 +15,6 @@ alias ls='ls --color=auto'
 
 # Add Autojump
 [[ -s /usr/share/autojump/autojump.sh ]] && source /usr/share/autojump/autojump.sh
+
+# Finishing command blesh
+[[ ! ${BLE_VERSION-} ]] || ble-attach
