@@ -6,6 +6,9 @@ alias bashrc='source ~/.bashrc'
 alias ll='ls -Al'
 alias ls='ls --color=auto'
 
+# Docker
+export DOCKER_HOST=unix:///var/run/docker.sock
+
 # Avoid duplicates and erased duplicates
 #HISTCONTROL=ignoredups:erasedups
 # Append to the history file, rather than overwriting it
